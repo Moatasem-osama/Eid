@@ -106,7 +106,7 @@ export default function Congrat() {
       </Helmet>
    
     <div className="min-h-screen bg-green-100 text-center p-6">
-    <div className="w-3/4 p-20 mx-auto bg-white shadow-lg rounded-4xl flex flex-col items-center justify-center">
+    <div className=" p-10 mx-auto bg-white shadow-lg rounded-4xl flex flex-col items-center justify-center">
     {searchParams.get("receiver") && (
         <div className="audio-player w-full mb-4">
           <audio
@@ -165,24 +165,6 @@ export default function Congrat() {
             </div>
           </div>
 
-          <div className="mt-4 flex space-x-2 justify-center">
-            <a
-              href={`https://wa.me/?text=${encodeURIComponent(`تهنئة عيد الفطر من ${sender} إلى ${receiver}: ${window.location.origin}/congrat?sender=${encodeURIComponent(sender)}&receiver=${encodeURIComponent(receiver)}`)}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-green-500 text-white p-2 rounded-lg"
-            >
-              مشاركة عبر واتساب
-            </a>
-            <a
-              href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(`تهنئة عيد الفطر من ${sender} إلى ${receiver}: ${window.location.origin}/congrat?sender=${encodeURIComponent(sender)}&receiver=${encodeURIComponent(receiver)}`)}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-blue-400 text-white p-2 rounded-lg"
-            >
-              مشاركة عبر تويتر
-            </a>
-          </div>
         </div>
       )}
       <button
@@ -200,13 +182,13 @@ export default function Congrat() {
       >
         إنشاء تهنئة جديدة
       </Link>
-        <div className="p-4 mx-auto my-5 text-right border-2 border-gray-400 rounded-lg text-2xl font-medium">
+        <div className="p-2 w-full mx-auto my-5 text-right border-2 border-gray-400 rounded-lg text-2xl font-medium">
     
     <div className="text-center p-3 border-b-red-700 border-t-red-700 border-b-4 border-t-4 ">
 مسجات تهنئة عيد الفطر المباركـ
      </div>
      <h1 className="mb-4 leading-10">مع اقتراب عيد الفطر المبارك، أعاده الله عليك بالخير والبركات، قد ترغب في إرسال تهنئة مميزة لأصدقائك وأقاربك. لذلك، أقدم لك اليوم مجموعة رائعة من رسائل المعايدة التي يمكنك إرسالها عبر الرسائل النصية، واتساب، فيسبوك، أو أي وسيلة تواصل أخرى.</h1>
-    <ul className="list-disc p-7 leading-9">
+    <ul className="list-disc p-7 leading-9 space-y-3">
  	<li>أدام الله عليك الأعياد دهور وألبسك من تقواه نور عيدك مبارك.</li>
  	<li>أمانينا تسبق تهانينا وفرحتنا تسبق ليالينا وعيد مبارك عليك وعلينا.</li>
  	<li>العيد علينا هل، وبأحلى فرحة طل، يا رب تسعد الكل.</li>
