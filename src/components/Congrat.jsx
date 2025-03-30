@@ -147,14 +147,14 @@ export default function Congrat() {
             <div className="flex items-center">
               <input
                 type="text"
-                value={`${window.location.origin}/congrat?sender=${encodeURIComponent(sender)}&receiver=${encodeURIComponent(receiver)}`}
+                value={`${window.location.href}/?sender=${encodeURIComponent(sender)}&receiver=${encodeURIComponent(receiver)}`}
                 readOnly
                 className="p-2 border rounded-l-lg flex-grow"
               />
               <button
                 onClick={() => {
                   navigator.clipboard.writeText(
-                    `${window.location.origin}/congrat?sender=${encodeURIComponent(sender)}&receiver=${encodeURIComponent(receiver)}`
+                    `${window.location.href}/?sender=${encodeURIComponent(sender)}&receiver=${encodeURIComponent(receiver)}`
                   );
                   alert('تم نسخ الرابط!');
                 }}
