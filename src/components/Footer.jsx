@@ -34,7 +34,17 @@ export default function Footer () {
           </a>
           
           <a 
-            href="https://www.linkedin.com/in/moatasem-osama-202378330/" 
+            href="https://www.youtube.com/@moatasemosama-t3n" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="hover:text-[#f4c430] transition-colors"
+            aria-label="يوتيوب"
+            
+          >
+           <i className="fa-brands fa-youtube text-red-500" ></i>
+          </a>
+          <a 
+            href="https://www.linkedin.com/in/al-moatasem-bellah-osama-202378330/" 
             target="_blank" 
             rel="noopener noreferrer"
             className="hover:text-[#f4c430] transition-colors"

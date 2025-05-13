@@ -1,4 +1,4 @@
-import { createBrowserRouter, createHashRouter, RouterProvider } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
 import Home from "./components/Home.jsx";
 import Congrat from "./components/congrat.jsx";
@@ -6,10 +6,10 @@ import Layout from "./components/Layout.jsx";
 const routers = createHashRouter([
   {
     path: "/",
-    element: <Layout />, // 🟢 هنا بنحط الـ Layout
+    element: <Layout />,
     children: [
-      { index: true, element: <Home /> }, // 🏠 الصفحة الرئيسية
-      { path: "/congrat", element: <Congrat /> }, // 🎉 صفحة التهنئة
+      { index: true, element: <Home /> },
+      { path: "/congrat", element: <Congrat /> }, 
     ],
   },
 ]);
