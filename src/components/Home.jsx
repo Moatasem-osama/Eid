@@ -1,9 +1,7 @@
 import { useState, useEffect, useCallback } from "react";
-import { Helmet } from "react-helmet-async";
 import { useNavigate } from "react-router-dom";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
-// مكون منفصل لحقل الإدخال لتجنب إعادة التصيير غير الضرورية
 const InputField = ({ label, id, name, value, onChange, type = "text" }) => {
   return (
     <div>
@@ -106,13 +104,6 @@ export default function Home() {
 
     return (
         <>
-            <Helmet>
-                <title>إنشاء تهنئة عيد الفطر</title>
-                <meta name="description" content="أنشئ بطاقة تهنئة مخصصة بمناسبة عيد الفطر المبارك" />
-                <meta property="og:title" content="منشئ تهنئات عيد الفطر" />
-                <meta property="og:description" content="صمم تهنئتك الخاصة وأرسلها لأحبابك" />
-            </Helmet>
-
             <header className="min-h-screen flex items-center justify-center bg-gradient-to-b from-green-100 via-green-200 to-green-300 w-full m-0">
                 <div className="w-full md:w-3/4 my-6 bg-white mx-auto rounded-2xl p-4 md:p-6 shadow-lg">
                     <h1 className="bg-gradient-to-r from-[#149b23] to-[#f4c430] bg-clip-text p-4 animate-bounce text-transparent text-3xl md:text-4xl font-bold text-center">

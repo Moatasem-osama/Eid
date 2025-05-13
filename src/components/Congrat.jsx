@@ -2,8 +2,6 @@
 import { useEffect, useState, useRef } from "react";
 import { Link, useSearchParams } from "react-router-dom";
 import domtoimage from "dom-to-image";
-import { Helmet } from "react-helmet-async";
-import pic from '../assets/image.jpg'
 export default function Congrat() {
   const [searchParams] = useSearchParams();
   const [sender, setSender] = useState("المرسل");
@@ -88,25 +86,8 @@ export default function Congrat() {
 
   return (
     <>
-   <Helmet>
-        <title>{seoData.title}</title>
-        <meta name="description" content={seoData.description} />
-        <meta name="keywords" content={seoData.keywords} />
-        
-        {/* Open Graph */}
-        <meta property="og:title" content={seoData.title} />
-        <meta property="og:description" content={seoData.description} />
-        <meta property="og:image" content={seoData.imageUrl} />
-        <meta property="og:type" content="website" />
-        
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={seoData.title} />
-        <meta name="twitter:description" content={seoData.description} />
-      </Helmet>
-   
     <div className="min-h-screen bg-green-100 text-center p-6">
-    <div className=" p-10 mx-auto bg-white shadow-lg rounded-4xl flex flex-col items-center justify-center">
+          <div className=" p-10 mx-auto bg-white shadow-lg rounded-4xl flex flex-col items-center justify-center">
     {searchParams.get("receiver") && (
         <div className="audio-player w-full mb-4">
           <audio
