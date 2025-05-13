@@ -220,7 +220,7 @@ export default function Congrat() {
       </div>
   
       <footer>
-        <h2>تم التطوير بواسطة المعتصم الله الهواري</h2>
+        <h2>تم التطوير بواسطة المعتصم بالله أسامة</h2>
       </footer>
       </div>
     </div>

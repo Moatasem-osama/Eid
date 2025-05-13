@@ -6,10 +6,9 @@ export default function Footer () {
       <div className="container mx-auto px-4">
       
         <p className="text-center text-lg font-arabic mb-2">
-          أنشأ بكل ❤️ بواسطة <span className="font-bold">المعتصم بالله الهواري</span>
+          أنشأ بكل ❤️ بواسطة <span className="font-bold">المعتصم بالله أسامة</span>
         </p>
         
-        {/* روابط التواصل */}
         <div className="flex justify-center space-x-4 text-2xl">
           
           <a 
